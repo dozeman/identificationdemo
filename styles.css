@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.profile {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-img {
+    margin-right: 20px;
+}
+
+.profile-img img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.btn-follow, .btn-message, .btn-edit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #28a745;
+    margin-top: 10px;
+}
+
+.profile-details {
+    display: flex;
+    padding: 20px;
+}
+
+.details-left, .details-right {
+    flex: 1;
+}
+
+.details-left h3, .details-right h3, .profile-projects h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.profile-projects {
+    padding: 20px;
+}
+
+.project-status p {
+    margin: 10px 0;
+}
+
+.progress-bar {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress {
+    background-color: #007bff;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin-bottom: 20px;
+    }
+
+    .profile-details {
+        flex-direction: column;
+    }
+
+    .details-left, .details-right {
+        margin-bottom: 20px;
+    }
+}
